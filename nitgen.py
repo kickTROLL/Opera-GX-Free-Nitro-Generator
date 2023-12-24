@@ -16,7 +16,10 @@ while num!=0:
     
     count=count+1
     response = requests.post(url, json=payload, headers=headers)
-    print("Response Status:", response.status_code)
+    if str(response.status_code)=="200":
+        print("Response Status:", response.status_code,"OK")
+    else:
+        print("Response Status:",response.status_code,"BAD")
     a=str(response.text)[10:-2]
     #print("Response Body:", a)
     b="https://discord.com/billing/partner-promotions/1180231712274387115/"
@@ -24,9 +27,5 @@ while num!=0:
     print("generated: ",count)
     f.write(c+'\n')
     num=num-1
-print()
-print()
-print()
-print("Generated",k,"Free Trials Successfully")
 
-
+print("\n\n\nGenerated",k,"Free Trials Successfully")
