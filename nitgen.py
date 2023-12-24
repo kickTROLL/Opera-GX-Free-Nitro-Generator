@@ -29,3 +29,4 @@ while num!=0:
     num=num-1
 
 print("\n\n\nGenerated",k,"Free Trials Successfully")
+f.close()
