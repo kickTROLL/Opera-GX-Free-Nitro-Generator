@@ -1,6 +1,5 @@
 import requests
 f=open("dcnitro.txt",'a')
-
 url = "https://api.discord.gx.games/v1/direct-fulfillment"
 payload = {
     "partnerUserId": "5055333528a2a654db33f8ee014b72242726357b54dba9f348d54056b4e95c3d"
@@ -13,7 +12,6 @@ num=int(input("how many u wanna generate?: "))
 k=num
 count=0
 while num!=0:
-    
     count=count+1
     response = requests.post(url, json=payload, headers=headers)
     if str(response.status_code)=="200":
@@ -27,6 +25,5 @@ while num!=0:
     print("generated: ",count)
     f.write(c+'\n')
     num=num-1
-
 print("\n\n\nGenerated",k,"Free Trials Successfully")
 f.close()
