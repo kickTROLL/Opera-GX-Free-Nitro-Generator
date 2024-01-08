@@ -8,7 +8,7 @@ headers = {
     "Content-Type": "application/json",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 OPR/56.0.3051.99"
 }
-num=int(input("how many u wanna generate?: "))
+num=int(input("Enter the number of promos you want to generate: "))
 k=num
 count=0
 while num!=0:
