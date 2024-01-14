@@ -19,7 +19,6 @@ while num!=0:
     else:
         print("Response Status:",response.status_code,"BAD")
     a=str(response.text)[10:-2]
-    #print("Response Body:", a)
     b="https://discord.com/billing/partner-promotions/1180231712274387115/"
     c=b+a
     print("generated: ",count)
